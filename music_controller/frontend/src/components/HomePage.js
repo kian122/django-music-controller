@@ -1,8 +1,9 @@
 import React , { Component } from "react"
-
+import CreateRoomPage from "./CreateRoomPage"
+import RoomJoinPage from "./RoomJoinPage"
 // this is the page for None url
 
-// this class is the class that we are rendering in app.j file
+// this class is that will handle the page url
 export default class HomePage extends Component {
     constructor(props) {
         super(props)
