@@ -3,7 +3,7 @@ import CreateRoomPage from "./CreateRoomPage"
 import RoomJoinPage from "./RoomJoinPage"
 
 //imports for react router dom 
-import { BrowserRouter as Router , Switch , } from "react-router-dom"
+import { BrowserRouter as Router , Switch , Route , Link , Redirect } from "react-router-dom"
 //
 
 // this is the page for None url
@@ -14,6 +14,18 @@ export default class HomePage extends Component {
     }
 
     render() {
-        return <h1> HomePage </h1>;
+        return (
+            <Router>
+                <Switch>
+                    <Route path='/' >
+                        <p>
+                            this is the home page
+                        </p>
+                    </Route>
+                    <Route path="/join" component= {RoomJoinPage} />
+                    <Route path="/create" component= {CreateRoomPage} />
+                </Switch>
+            </Router>
+        );
     }
 }
