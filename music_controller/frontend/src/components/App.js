@@ -14,8 +14,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-          <CreateRoomPage />
-          <RoomJoinPage />
           <HomePage />
       </div>
     );
