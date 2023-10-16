@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+
+// importing all the classes from file directory ./*.js
 import HomePage from "./HomePage";
+import CreateRoomPage from "./CreateRoomPage"
+import RoomJoinPage from "./RoomJoinPage"
 
 export default class App extends Component {
   constructor(props) {
@@ -9,9 +13,11 @@ export default class App extends Component {
 
   render() {
     return (
-
-      // home page rendered from homepage.js
-      <HomePage />
+      <div>
+          <CreateRoomPage />
+          <RoomJoinPage />
+          <HomePage />
+      </div>
     );
   }
 }
